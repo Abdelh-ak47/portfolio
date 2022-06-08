@@ -424,6 +424,18 @@ footer {
         }
     }
 }
+    nav {
+        ul {
+            li {
+                a:hover {
+                    border: none;
+                }
+            }
+        }
+    }
+    .organization {
+        filter: unset;
+    }
 
 @media screen and (max-width: 452px) {
     main {
@@ -483,21 +495,7 @@ footer {
 }
 
 
-@media (hover: hover) {
-    nav {
-        ul {
-            li {
-                a:hover {
-                    border-bottom: #12000052 solid 2px;
-                }
-            }
-        }
-    }
-    .organization:hover {
-        filter: unset;
-        filter: drop-shadow(10px 10px 7px var(--default));
-    }
-}
+
 // @media screen and (max-width: 963px) {
 //     article {
 //        .container {
@@ -508,3 +506,5 @@ footer {
 //        } 
 //     }
 // }
+
+
