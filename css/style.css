@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
 :root {
   --default: #FFEDA9;
   --black: #120000;
@@ -7,10 +8,41 @@
 
 html {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 
+/* --------------------------------------This is the style of the scrollbar ------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--writing);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #12000052;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* ------------------------------------THE END OF SCROLLBAR'S STYLE---------------------------------------------------*/
 body {
   width: 100%;
   margin: 0;
@@ -18,6 +50,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: var(--default);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -59,45 +93,6 @@ header .logo h1 {
   font-weight: 400;
   font-family: 'Old-Antic-decorative';
   font-size: 3em;
-}
-
-footer {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: var(--writing);
-}
-
-footer .contactLogo {
-  margin: 0 auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 50%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(2em, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  background-color: var(--black);
-  border-top: 2px solid var(--writing);
-  border-bottom: 2px solid var(--writing);
-  border-radius: 100px 5px 100px 5px;
-  padding: .3em 1.5em;
-}
-
-footer .contactLogo a {
-  place-self: center;
-}
-
-footer .contactLogo a img {
-  width: 100%;
-}
-/*# sourceMappingURL=style.css.map */;
 }
 
 header nav {
